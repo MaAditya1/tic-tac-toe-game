@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #a1c3c9; */
+    background-color: #91aba8; /* Light teal background */
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5vmin;
+    text-shadow: 0 0 15px rgba(255, 255, 255, .8);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); Slight shadow on text for depth */
+}
+
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    background: linear-gradient(145deg, #a7c4c0, #cccccc);
+    border: 20px  solid #548763;
+    border-radius: 3rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.9); /*Shadow for 3D look*/
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); */
+}
+
+.square-1, .square-2, .square-3,.square-4, .square-5, .square-6,.square-7, .square-8, .square-9{
+    height: 19vmin;
+    width: 19vmin;
+    background-color: transparent; 
+    display: grid;
+    place-items: center;     
+}
+
+.square-2,.square-5,.square-8{
+    border-left: 1.5vmin solid rgba(255, 165, 0, 0.7); 
+    border-right: 1.5vmin solid rgba(255, 165, 0, 0.7);
+}
+
+.square-4,.square-5,.square-6{
+    border-top: 1.5vmin solid rgba(255, 165, 0, 0.7); 
+    border-bottom: 1.5vmin solid rgba(255, 165, 0, 0.7);
+}
+
+
+.circle {
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #548763, #cfe0d8); /*Light gradient to give 3D effect*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.5); /*Shadow for 3D look*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Slight shadow on text for depth */
+}
+
+.circle:hover {
+    transform: scale(1.05); 
+}
+
+
+#new-btn{
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2vmin;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#new-btn:hover {
+    background-color: #ffad60; /* Peach-orange color for hover */
+}
+#new-btn:hover{
+    transform: scale(1.05); 
+}
+#reset-btn{
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2vmin;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#reset-btn:hover {
+    background-color: #ffad60; /* Peach-orange color for hover */
+}
+
+#reset-btn:hover {
+    transform: scale(1.05); 
+}
+
+
+#msg{
+    color: #fffcff;
+    font-size: 6vmin;
+}
+.msg-container{
+    height: 20vmin;
+}
+
+.hide{
+    display: none;
+}
